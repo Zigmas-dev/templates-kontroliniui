@@ -1,8 +1,8 @@
 .text-breack {
   width: 800px;
   text-align: justify; /* Lygiavimas pagal abi puses */
-  text-indent: 2em; /* Pirmos eilutės įtrauka */
-  line-height: 1.6; /* Tarpo tarp eilučių padidinimas */
+  text-indent: 2rem; /* Pirmos eilutės įtrauka */
+  line-height: 1.5; /* Tarpo tarp eilučių padidinimas */
   hyphens: auto; /* Automatinis žodžių lūžimas su brūkšneliais */
   font-family: "Times New Roman", serif;
   border: 1px solid #ccc; /* Tik vizualiai matyti bloką */
