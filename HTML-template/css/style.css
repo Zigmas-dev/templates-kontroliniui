@@ -1,0 +1,241 @@
+/* =========================
+   🔧 GLOBAL RESET
+========================= */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif; /* iš Google Fonts */
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* =========================
+   📦 CONTAINER (mobile-first)
+========================= */
+.container {
+  width: 100%;
+  padding: 0 1rem;
+}
+
+/* =========================
+   🔝 HEADER
+========================= */
+.header {
+  background: #222;
+  color: #fff;
+}
+
+.header .container {
+  display: flex;
+  flex-direction: column; /* mobile – viskas stulpeliu */
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.logo {
+  font-size: 1.5rem;
+}
+
+/* NAV (mobile – paprastas list) */
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* =========================
+   🧭 HERO
+========================= */
+.hero {
+  background: #ddd;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.hero button {
+  margin-top: 1rem;
+  padding: 0.7rem 1.2rem;
+  border: none;
+  background: #333;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* =========================
+   📦 MAIN LAYOUT
+========================= */
+.main .container {
+  display: flex;
+  flex-direction: column; /* mobile – vienas po kitu */
+  gap: 2rem;
+  padding: 2rem 0;
+}
+
+/* ARTICLE */
+.article {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+/* FIGURE */
+figure {
+  margin: 1rem 0;
+}
+
+figure img {
+  width: 100%;
+  border-radius: 6px;
+}
+
+figcaption {
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+  color: #555;
+}
+
+/* ASIDE */
+.sidebar {
+  background: #eee;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+/* =========================
+   📊 SERVICES
+========================= */
+.services {
+  background: #fff;
+  padding: 2rem 0;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column; /* mobile – viena kolona */
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.card {
+  background: #f1f1f1;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.card i {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+/* =========================
+   📬 CONTACT
+========================= */
+.contact {
+  padding: 2rem 0;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+input,
+textarea {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 0.7rem;
+  border: none;
+  background: #222;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* =========================
+   🔻 FOOTER
+========================= */
+.footer {
+  background: #222;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+}
+
+/* =========================
+   📱 TABLET (>= 768px)
+========================= */
+@media (min-width: 768px) {
+  /* HEADER – horizontal */
+  .header .container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  /* NAV – row */
+  .nav ul {
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  /* MAIN – sidebar šalia */
+  .main .container {
+    flex-direction: row;
+  }
+
+  .article {
+    flex: 2;
+  }
+
+  .sidebar {
+    flex: 1;
+  }
+
+  /* SERVICES – 2 kolonos */
+  .cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .card {
+    flex: 1 1 calc(50% - 1rem);
+  }
+}
+
+/* =========================
+   💻 DESKTOP (>= 1024px)
+========================= */
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+    margin: 0 auto;
+  }
+
+  /* SERVICES – 3 kolonos */
+  .card {
+    flex: 1 1 calc(33.333% - 1rem);
+  }
+
+  /* HERO didesnis */
+  .hero {
+    padding: 4rem 2rem;
+  }
+
+  .hero h2 {
+    font-size: 2.5rem;
+  }
+}

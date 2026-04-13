@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="lt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- 🧠 Papildomas aprašymas -->
+    <meta
+      name="description"
+      content="Semantinis HTML template su accessibility sprendimais"
+    />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+    <title>Semantinis HTML Template</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <!-- ⏭️ Skip link
+    <a href="#main-content" class="skip-link">Pereiti prie turinio</a> -->
+
+    <!-- HEADER -->
+    <header class="header" role="banner">
+      <div class="container">
+        <h1 class="logo">
+          <i class="fa-solid fa-code" aria-hidden="true"></i>
+          <span>ManoProjektas</span>
+        </h1>
+
+        <nav class="nav" role="navigation" aria-label="Pagrindinė navigacija">
+          <ul>
+            <!-- <li><a href="#" aria-current="page">Pagrindinis</a></li> -->
+            <li><a href="#">Apie</a></li>
+            <li>
+              <a
+                href="pages/table.html"
+                aria-label="Peržiūrėti lentelių pavyzdžius"
+                >Lentelės</a
+              >
+            </li>
+            <li>
+              <a
+                href="pages/forms.html"
+                aria-label="Peržiūrėti formų pavyzdžius"
+                >Formos</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container">
+        <h2 id="hero-title">Sveiki atvykę</h2>
+        <p>Modernus semantinis HTML šablonas.</p>
+
+        <button aria-label="Sužinoti daugiau apie paslaugas">
+          <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+          Sužinoti daugiau
+        </button>
+      </div>
+    </section>
+
+    <!-- MAIN -->
+    <main id="main-content" class="main" role="main">
+      <div class="container">
+        <article class="article">
+          <header>
+            <h2>Straipsnio pavadinimas</h2>
+            <p>
+              Autorius: <span>Zigmas</span> |
+              <time datetime="2026">2026</time>
+            </p>
+          </header>
+
+          <section>
+            <p>
+              Čia yra straipsnio turinys. Naudojami semantiniai HTML elementai.
+            </p>
+          </section>
+
+          <figure>
+            <img
+              src="img/nature-3.jpg"
+              alt="Pavyzdinis vaizdas, rodantis svetainės dizainą"
+            />
+            <figcaption>
+              <i class="fa-solid fa-image" aria-hidden="true"></i>
+              Tai yra paveikslėlio aprašymas (figcaption)
+            </figcaption>
+          </figure>
+
+          <footer>
+            <p>
+              <i class="fa-solid fa-tags" aria-hidden="true"></i>
+              Kategorija: <span>Web Development</span>
+            </p>
+          </footer>
+        </article>
+
+        <aside class="sidebar" aria-labelledby="sidebar-title">
+          <h3 id="sidebar-title">Naudingos nuorodos</h3>
+          <ul>
+            <li>
+              <a href="#">
+                <i class="fa-solid fa-link" aria-hidden="true"></i>
+                Nuoroda 1
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa-solid fa-link" aria-hidden="true"></i>
+                Nuoroda 2
+              </a>
+            </li>
+          </ul>
+        </aside>
+      </div>
+    </main>
+
+    <!-- SERVICES -->
+    <section class="services" aria-labelledby="services-title">
+      <div class="container">
+        <h2 id="services-title">Mūsų paslaugos</h2>
+
+        <div class="cards">
+          <article class="card">
+            <i class="fa-solid fa-laptop-code" aria-hidden="true"></i>
+            <h3>Web kūrimas</h3>
+            <p>Kuriame modernias svetaines.</p>
+          </article>
+
+          <article class="card">
+            <i class="fa-solid fa-mobile-screen" aria-hidden="true"></i>
+            <h3>Mobile dizainas</h3>
+            <p>Mobile-first sprendimai.</p>
+          </article>
+
+          <article class="card">
+            <i class="fa-solid fa-chart-line" aria-hidden="true"></i>
+            <h3>SEO</h3>
+            <p>Optimizuojame paieškai.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <h2 id="contact-title">Kontaktai</h2>
+
+        <form aria-label="Kontaktų forma">
+          <label for="name">Vardas</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">El. paštas</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="message">Žinutė</label>
+          <textarea id="message" name="message"></textarea>
+
+          <button type="submit">
+            <i class="fa-solid fa-paper-plane" aria-hidden="true"></i>
+            Siųsti
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer" role="contentinfo">
+      <div class="container">
+        <p>
+          &copy; 2026 ManoProjektas |
+
+          <span aria-label="Facebook">
+            <i class="fa-brands fa-facebook"></i>
+          </span>
+
+          <span aria-label="Instagram">
+            <i class="fa-brands fa-instagram"></i>
+          </span>
+
+          <span aria-label="GitHub">
+            <i class="fa-brands fa-github"></i>
+          </span>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

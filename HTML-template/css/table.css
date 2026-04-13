@@ -1,0 +1,83 @@
+/* =========================
+   📊 TABLE BASE
+========================= */
+table {
+  width: 100%;
+  border-collapse: collapse; /* sujungia borderius */
+  margin: 1.5rem 0;
+  font-size: 0.95rem;
+}
+
+/* =========================
+   🧠 CAPTION (aprašymas)
+========================= */
+caption {
+  caption-side: top;
+  text-align: left;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+/* =========================
+   📌 HEADERS
+========================= */
+th {
+  background-color: #333;
+  color: #fff;
+  text-align: left;
+  padding: 0.6rem;
+}
+
+/* =========================
+   📄 CELLS
+========================= */
+td {
+  padding: 0.6rem;
+  border: 1px solid #ddd;
+}
+
+/* =========================
+   🎯 BORDER VISIEMS
+========================= */
+th,
+td {
+  border: 1px solid #ddd;
+}
+
+/* =========================
+   🦓 ZEBRA EFFECT
+========================= */
+tbody tr:nth-child(even) {
+  background-color: #f5f5f5;
+}
+
+/* =========================
+   🖱️ HOVER EFFECT
+========================= */
+tbody tr:hover {
+  background-color: #e0e0e0;
+}
+
+/* =========================
+   ♿ FOCUS (accessibility)
+========================= */
+td:focus,
+th:focus {
+  outline: 2px solid #000;
+}
+
+/* =========================
+   📱 MOBILE SCROLL
+========================= */
+.table-wrapper {
+  overflow-x: auto;
+}
+
+/* =========================
+   📱 SMALL SCREEN FIX
+========================= */
+@media (max-width: 600px) {
+  table {
+    font-size: 0.85rem;
+  }
+}

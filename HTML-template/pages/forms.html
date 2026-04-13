@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="lt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formų pavyzdžiai</title>
+
+    <link rel="stylesheet" href="../css/forms.css" />
+  </head>
+
+  <body>
+    <main class="container">
+      <h1>Formos elementų pavyzdžiai</h1>
+
+      <!-- =========================
+           📌 RADIO BUTTONS
+      ========================== -->
+      <section aria-labelledby="radio-title" class="form-block">
+        <h2 id="radio-title">Pasirink lytį (radio)</h2>
+
+        <form>
+          <fieldset>
+            <legend>Pasirinkimas</legend>
+
+            <div class="form-item">
+              <input type="radio" id="male" name="gender" value="male" />
+              <label for="male">Vyras</label>
+            </div>
+
+            <div class="form-item">
+              <input type="radio" id="female" name="gender" value="female" />
+              <label for="female">Moteris</label>
+            </div>
+
+            <div class="form-item">
+              <input type="radio" id="other" name="gender" value="other" />
+              <label for="other">Kita</label>
+            </div>
+          </fieldset>
+        </form>
+      </section>
+
+      <!-- =========================
+           📌 CHECKBOX
+      ========================== -->
+      <section aria-labelledby="check-title" class="form-block">
+        <h2 id="check-title">Pomėgiai (checkbox)</h2>
+
+        <form>
+          <fieldset>
+            <legend>Pasirink pomėgius</legend>
+
+            <div class="form-item">
+              <input type="checkbox" id="sport" name="hobby" />
+              <label for="sport">Sportas</label>
+            </div>
+
+            <div class="form-item">
+              <input type="checkbox" id="music" name="hobby" />
+              <label for="music">Muzika</label>
+            </div>
+
+            <div class="form-item">
+              <input type="checkbox" id="coding" name="hobby" />
+              <label for="coding">Programavimas</label>
+            </div>
+          </fieldset>
+        </form>
+      </section>
+
+      <!-- =========================
+           📌 SELECT
+      ========================== -->
+      <section aria-labelledby="select-title" class="form-block">
+        <h2 id="select-title">Miestas (select)</h2>
+
+        <form>
+          <label for="city">Pasirink miestą</label>
+
+          <select id="city" name="city">
+            <option value="">-- Pasirink --</option>
+            <option value="vilnius">Vilnius</option>
+            <option value="kaunas">Kaunas</option>
+            <option value="klaipeda">Klaipėda</option>
+          </select>
+        </form>
+      </section>
+
+      <!-- =========================
+           📌 TEXT INPUT
+      ========================== -->
+      <section aria-labelledby="text-title" class="form-block">
+        <h2 id="text-title">Teksto įvedimas</h2>
+
+        <form>
+          <label for="name">Vardas</label>
+          <input type="text" id="name" name="name" placeholder="Įrašyk vardą" />
+
+          <label for="email">El. paštas</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="pvz@gmail.com"
+          />
+        </form>
+      </section>
+
+      <!-- =========================
+           📌 SUBMIT
+      ========================== -->
+      <section class="form-block">
+        <button type="submit">Siųsti</button>
+      </section>
+    </main>
+  </body>
+</html>
