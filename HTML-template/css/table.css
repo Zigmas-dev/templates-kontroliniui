@@ -1,6 +1,24 @@
 /* =========================
    📊 TABLE BASE
-========================= */
+   ========================= */
+
+.back-link {
+  display: inline-block;
+  margin: 1rem 2rem;
+  text-decoration: none;
+  color: #222;
+  font-weight: 600;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}
+
+/* ♿ accessibility focus */
+.back-link:focus {
+  outline: 2px solid #000;
+  outline-offset: 2px;
+}
 table {
   width: 100%;
   border-collapse: collapse; /* sujungia borderius */
